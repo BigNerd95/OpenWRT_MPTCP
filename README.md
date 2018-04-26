@@ -1,6 +1,6 @@
 # OpenWRT MPTCP
 
-This is a cleaner version of [OpenMPTCProuter](https://github.com/ysurac/openmptcprouter).
+This is a cleaner version of [OpenMPTCProuter](https://github.com/ysurac/openmptcprouter).  
 For more info see the original project.
 
 
@@ -22,7 +22,12 @@ cd OpenWRT_MPTCP
 ./prepare.sh
 ```
 
-Once you have selected your preferences in menuconfig run `make -j9` (where 9 is the number of cores + 1).
+Once you have selected your preferences in menuconfig   
+```sh
+$ cd openwrt
+$ make -j9
+```   
+(where 9 is the number of cores + 1).
 
 ## Credits
 
