@@ -9,9 +9,10 @@ cd openwrt
 
 # 2) apply MPTCP kernel patches
 
-cp ../mptcp_patches/699-mptcp_v0.92.2.patch target/linux/generic/patches-4.4/
-cp ../mptcp_patches/690-mptcp_v0.93_b674162.patch target/linux/generic/hack-4.9/
-cp ../mptcp_patches/690-mptcp_v0.94.patch target/linux/generic/hack-4.14/
+wget https://multipath-tcp.org/patches/mptcp-v4.4.110-645011515197.patch -O target/linux/generic/pending-4.4/690-mptcp-v4.4.110-645011515197.patch
+wget https://multipath-tcp.org/patches/mptcp-v4.9-c88d1d56809e.patch -O target/linux/generic/pending-4.9/690-mptcp-v4.9-c88d1d56809e.patch
+wget https://multipath-tcp.org/patches/mptcp-v4.14-559409607f41.patch -O target/linux/generic/pending-4.14/690-mptcp-v4.14-559409607f41.patch
+
 
 
 config=$(cat <<EOL
